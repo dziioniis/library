@@ -1,0 +1,37 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@page import="org.company.name.entity.User"%>
+<style>
+   <%@include file='/jsp/css/catalog.css' %>
+</style>
+<html>
+<head>
+</head>
+<body>
+<div class="up" >
+<table>
+<tr>
+<td>
+<c:out value="${user.name}"/>
+</td>
+<form method="get" action="/servlet">
+<td>
+<input type="hidden" name="command" value="showMyRequest">
+<input type="submit" value="requests">
+</form></td>
+<form method="get" action="/servlet">
+<td>
+<input type="hidden" name="command" value="logout">
+<input type="submit" value="logout">
+</form>
+</td>
+<form method="get" action="/servlet">
+<td>
+<div class="finder"><input type="text"  name="find"/>
+<input type="hidden" name="command" value="search"/>
+<input type="submit" value="search"/></div></td>
+</form>
+</div>
+</div>
+</tr>
+</table>
+

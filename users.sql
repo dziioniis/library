@@ -1,0 +1,2 @@
+INSERT INTO user(name,pass,mail)values("admin","21232f297a57a5a743894a0e4a801fc3","mail@gmail.com");pass:admin
+INSERT INTO user(name,pass,mail)values("denis","18a95bb4ce41be560d044421970a32a0","dziioniis@gmail.com");pass:ggclient

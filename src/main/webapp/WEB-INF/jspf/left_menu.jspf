@@ -1,0 +1,11 @@
+
+<%@page import="org.company.name.entity.Genre"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<div class="genre" >
+<h1>Genre</h1>
+<table class="tableOfGenre">
+     <c:forEach items="${datalist}" var="list">
+        <tr><td><a href="/servlet?command=ShowBooks&genre=${list.name}" ><c:out value="${list.name}"/></a></tr></td>
+    </c:forEach>
+    </table>
+</div>
